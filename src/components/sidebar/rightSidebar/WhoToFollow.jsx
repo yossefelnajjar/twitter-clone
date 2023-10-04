@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import axios                   from "axios";
 import WhoToFollowRow from "./WhoToFollowRow";
+import { apiUrl } from "../../constants";
 
 export default function WhoToFollow() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://tarmeezacademy.com/api/v1/users")
+      .get(`${apiUrl}/users`)
       .then((response) => { setUsers(response.data.data); })
       .catch((error)   => { console.error(error); });
   }, []);

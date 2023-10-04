@@ -5,6 +5,7 @@ import axios                   from "axios";
 import PageTitle   from "./PageTitle";
 import Tweet       from "./Tweet";
 import TweetEditor from "./TweetEditor";
+import { apiUrl } from "./constants";
 
 export default function Timeline() {
   const [posts, setPosts] = useState([]);
@@ -13,7 +14,7 @@ export default function Timeline() {
   
   useEffect(() => {
     axios
-      .get("http://tarmeezacademy.com/api/v1/posts?page=1")
+      .get(`${apiUrl}/posts?page=1`)
       .then((response) => { setPosts(response.data.data); setData(response.data); })
       .catch((error)   => { console.error(error); });
   }, [personalInfo]);

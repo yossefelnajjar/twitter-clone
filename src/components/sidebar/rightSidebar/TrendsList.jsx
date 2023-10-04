@@ -1,8 +1,9 @@
 import { useEffect}                 from "react";
 import { useDispatch, useSelector } from "react-redux";
 import axios                        from "axios";
-import TrendRow      from "./TrendRow";
+import TrendRow from "./TrendRow";
 import { addTrends } from "../../../redux/slices/trends-slice";
+import { apiUrl } from "../../constants";
 
 export default function TrendsList() {
   const trends   = useSelector(state => state.trends)
@@ -10,7 +11,7 @@ export default function TrendsList() {
   
   useEffect(() => {
     axios
-      .get("http://tarmeezacademy.com/api/v1/tags")
+      .get(`${apiUrl}/tags`)
       .then((response) => { dispatch(addTrends(response.data.data)); })
       .catch((error)   => { console.error(error); });
   }, []);
