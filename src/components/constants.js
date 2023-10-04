@@ -1,0 +1,1 @@
+export const apiUrl = `https://tarmeezacademy.com/api/v1`

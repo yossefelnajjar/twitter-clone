@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.timeLine {
+  width: 60rem;
+  min-height: 94vh;
+}
+
+.pageTitle {
+  width: 60rem;
+  margin-left: -1px;
+  position: fixed;
+}
+@media (max-width: 768px) {
+  .pageTitle {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 2400px) {
+  .pageTitle {
+    position: initial;
+    width: calc(100% + 1.5px);
+  }
+}/*# sourceMappingURL=main.css.map */
