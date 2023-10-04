@@ -4,7 +4,7 @@
 
 A Twitter clone project built with React, Tailwind CSS, React Router DOM, React Redux, Redux Toolkit, Axios, and React Infinite Scroll Component.
 
-**Live Demo**: [Twitter Clone Demo](demo-link)
+**Live Demo**: [Twitter Clone Demo](https://twitter-clone-yossef.vercel.app/)
 
 ## Table of Contents
 
