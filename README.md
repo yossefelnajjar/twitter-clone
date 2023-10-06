@@ -6,6 +6,10 @@ A Twitter clone project built with React, Tailwind CSS, React Router DOM, React 
 
 **Live Demo**: [Twitter Clone](https://twitter-clone-yossef.vercel.app/)
 
+**NOTE:**
+
+the infinite scroll doesn't work on the live demo (try to clone the project and run it on your computer -instructions below-)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
